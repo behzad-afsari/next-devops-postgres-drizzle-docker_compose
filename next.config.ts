@@ -1,7 +1,13 @@
-import type { NextConfig } from "next";
-
-const nextConfig: NextConfig = {
-  /* config options here */
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  output: 'standalone',
+  // اگر از تصاویر خارجی استفاده می‌کنی، این را هم اضافه کن
+  images: {
+    remotePatterns: [
+      // مثال:
+      // { protocol: 'https', hostname: 'example.com' },
+    ],
+  },
 };
 
-export default nextConfig;
+module.exports = nextConfig;

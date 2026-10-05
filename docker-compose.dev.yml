@@ -1,0 +1,17 @@
+services:
+  db:
+    image: postgres:18-alpine
+    container_name: next-devops-postgres-drizzle-docker_compose
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: myuser
+      POSTGRES_PASSWORD: mypassword
+      POSTGRES_DB: mydb
+    ports:
+      - 5433:5432
+       # برای dev، پورت باز باشد تا بتونی با DBeaver وصل شی
+    # volumes:
+    #   - postgres_dev_data:/var/lib/postgresql/data
+
+# volumes:
+#   postgres_dev_data:

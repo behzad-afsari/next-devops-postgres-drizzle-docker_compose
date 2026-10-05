@@ -1,5 +1,5 @@
 {
-  "name": "next-app-1",
+  "name": "next-devops-postgres-drizzle-docker_compose",
   "version": "0.1.0",
   "private": true,
   "scripts": {
